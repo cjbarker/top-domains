@@ -1,7 +1,7 @@
 # TOP DOMAINS
 
 ## About 
-The repo caontains the top ranked top level domains (TLD) and websites tracked via [Cisco's Umberla Popularity List](https://s3-us-west-1.amazonaws.com/umbrella-static/index.html). Potential future enhancements may include additional source of records for merging (ex: Alexa 1Million).
+The repo caontains the top ranked top level domains (TLD) and websites tracked via [Cisco's Umbrella Popularity List](https://s3-us-west-1.amazonaws.com/umbrella-static/index.html). Potential future enhancements may include additional source of records for merging (ex: Alexa 1Million).
 
 The repo's goal is to provide a simple, static comma separate files available for easy ingestion and use.
 
