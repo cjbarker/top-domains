@@ -2,13 +2,30 @@
 set +x
 
 # #####################################################################
+# Registers gitlab runner for use of docker in GitLab CI
+# Specific to project: https://gitlab.disney.com/segmentation/pbridge/
 #
+# Usage: ./create-lists.sh
+#
+# No arguments required or optional. Will download files automatically
+#
+# Outputs to STDOUT or STDERR.
+# Exit code of 0 denotes success.  None zero exit code failed.
 # #####################################################################
 
 
 # =====================================================================
 # F  U  N  C  T  I  O  N  S
 # =====================================================================
+
+function usage {
+    echo "Usage: ./create-lists.sh"
+    echo
+    echo "No arguments required or optional. Will download files automatically"
+    echo
+    echo "Outputs to STDOUT or STDERR."
+    echo "Exit code of 0 denotes success.  None zero exit code failed."
+}
 
 function echoerr {
     echo "$@" 1>&2;
@@ -72,12 +89,17 @@ function push_to_git() {
 # M  A  I  N     L  O  G  I  C
 # =====================================================================
 
-# ensure commands available
+if [ $# -ge 1 ]; then
+    usage
+    exit 100
+fi
+
+# ensure commands available - handles exit
 cmd_exist curl
 cmd_exist unzip
 cmd_exist split
 
-# Globals
+# GLOBALS
 TMP=top-recs
 TOP_1M='top-1m'
 TOP_TLD='top-1m-TLD'
