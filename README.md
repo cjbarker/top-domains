@@ -1,5 +1,7 @@
 # TOP DOMAINS
 
+[![GitLab license](https://img.shields.io/badge/license-Apache2.0-brightgreen.svg)](https://gitlab.com/cjbarker/top-domains/blob/master/LICENSE)
+
 ## About 
 The repo caontains the top ranked top level domains (TLD) and websites tracked via [Cisco's Umbrella Popularity List](https://s3-us-west-1.amazonaws.com/umbrella-static/index.html). Potential future enhancements may include additional source of records for merging (ex: Alexa 1Million).
 
