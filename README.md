@@ -7,6 +7,31 @@ The repo caontains the top ranked top level domains (TLD) and websites tracked v
 
 The repo's goal is to provide a simple, static comma separate files available for easy ingestion and use.
 
+## File Downloads
+The files can be downloaded in several ways:
+
+1. [Download archive release](https://gitlab.com/cjbarker/top-domains/uploads/939ecc9ff1139559fab121344eabb68b/top-recs-20180316.7z) in 7zip format that includes all the files
+```bash
+wget https://gitlab.com/cjbarker/top-domains/uploads/939ecc9ff1139559fab121344eabb68b/top-recs-20180316.7z
+```
+
+2. All files downloaded via clone of the repository 
+```bash
+git clone git@gitlab.com:cjbarker/top-domains.git
+cd top-domains/top-recs
+```
+
+3. Individual file download via raw file from top-recs directory in the repository
+
+```bash
+wget https://gitlab.com/cjbarker/top-domains/raw/master/top-recs/top-sites-1000000.csv
+```
+
+4. Run the program directly via wget piped to sh (see usage below)
+```bash
+wget -qO- https://gitlab.com/cjbarker/top-domains/raw/master/create-lists.sh | sh
+```
+
 ## Usage
 The files can be downloaded directly via the directory top-recs in the repo, or can generated locally via running of the script.
 
