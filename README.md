@@ -22,7 +22,6 @@ cd top-domains/top-recs
 ```
 
 3. Individual file download via raw file from top-recs directory in the repository
-
 ```bash
 wget https://gitlab.com/cjbarker/top-domains/raw/master/top-recs/top-sites-1000000.csv
 ```
