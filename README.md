@@ -2,7 +2,7 @@
 
 [![GitLab license](https://img.shields.io/badge/license-Apache2.0-brightgreen.svg)](https://gitlab.com/cjbarker/top-domains/blob/master/LICENSE)
 
-## About 
+## About
 The repo caontains the top ranked top level domains (TLD) and websites tracked via [Cisco's Umbrella Popularity List](https://s3-us-west-1.amazonaws.com/umbrella-static/index.html). Potential future enhancements may include additional source of records for merging (ex: Alexa 1Million).
 
 The repo's goal is to provide a simple, static comma separate files available for easy ingestion and use.
@@ -10,12 +10,12 @@ The repo's goal is to provide a simple, static comma separate files available fo
 ## File Downloads
 The files can be downloaded in several ways:
 
-1. [Download archive release](https://gitlab.com/cjbarker/top-domains/uploads/939ecc9ff1139559fab121344eabb68b/top-recs-20180316.7z) in 7zip format that includes all the files
+1. [Download archive release](https://gitlab.com/cjbarker/top-domains/uploads/top-recs-20200329.zip ) in 7zip format that includes all the files
 ```bash
-wget https://gitlab.com/cjbarker/top-domains/uploads/939ecc9ff1139559fab121344eabb68b/top-recs-20180316.7z
+wget https://gitlab.com/cjbarker/top-domains/uploads/top-recs-20200329.zip
 ```
 
-2. All files downloaded via clone of the repository 
+2. All files downloaded via clone of the repository
 ```bash
 git clone git@gitlab.com:cjbarker/top-domains.git
 cd top-domains/top-recs
@@ -46,7 +46,7 @@ ls top-recs/
 top-TLD-100.csv       top-TLD-5828.csv      top-sites-1000.csv    top-sites-100000.csv
 top-TLD-1000.csv      top-sites-100.csv     top-sites-10000.csv   top-sites-1000000.csv
 
-# Example Output of ranked Top Level Domains (TLD) 
+# Example Output of ranked Top Level Domains (TLD)
 head top-recs/top-TLD-100.csv
 1,com
 2,net
@@ -59,7 +59,7 @@ head top-recs/top-TLD-100.csv
 9,elb.amazonaws.com
 10,goog
 
-# Example Output of ranked Top Websites 
+# Example Output of ranked Top Websites
 head top-recs/top-sites-100.csv
 1,google.com
 2,netflix.com

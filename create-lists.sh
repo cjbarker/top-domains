@@ -141,4 +141,10 @@ split_file ${TMP}/${TOP_TLD_CSV} ${TMP}/${TOP_TLD_PREFIX}
 find ${TMP}/. -maxdepth 1 ! -name "*.csv" -type f -delete
 rm -rf ${TMP}/${TOP_1M_CSV} ${TMP}/${TOP_TLD_CSV}
 
+# archive all for upload
+mkdir -p uploads
+d=`date +"%Y%m%d"`
+7z a uploads/top-recs-${d}.zip top-recs
+
+
 exit 0
