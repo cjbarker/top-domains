@@ -125,20 +125,20 @@ unzip ${TMP}/${TOP_1M_ZIP} -d ${TMP}
 if [ $? -ne 0 ]; then
     echoerr "Unable to unzip ${TMP}/${TOP_1M_ZIP}"
     exit 4
-fi 
+fi
 
 unzip ${TMP}/${TOP_TLD_ZIP} -d ${TMP}
 if [ $? -ne 0 ]; then
     echoerr "Unable to unzip ${TMP}/${TOP_TLD_ZIP}"
     exit 5
-fi 
+fi
 
 # Split files for consumption
 split_file ${TMP}/${TOP_1M_CSV} ${TMP}/${TOP_SITES_PREFIX}
 split_file ${TMP}/${TOP_TLD_CSV} ${TMP}/${TOP_TLD_PREFIX}
 
 # clean-up
-find ${TMP}/. ! -name "*.csv" -maxdepth 1 -type f -delete
+find ${TMP}/. -maxdepth 1 ! -name "*.csv" -type f -delete
 rm -rf ${TMP}/${TOP_1M_CSV} ${TMP}/${TOP_TLD_CSV}
 
 exit 0
