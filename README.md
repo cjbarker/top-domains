@@ -43,32 +43,32 @@ wget -qO- https://gitlab.com/cjbarker/top-domains/raw/master/create-lists.sh | s
 # Available files separated by TLD and websites
 # Format <rank>,<value>
 ls top-recs/
-top-TLD-100.csv       top-TLD-5828.csv      top-sites-1000.csv    top-sites-100000.csv
+top-TLD-100.csv       top-TLD-4121.csv      top-sites-1000.csv    top-sites-100000.csv
 top-TLD-1000.csv      top-sites-100.csv     top-sites-10000.csv   top-sites-1000000.csv
 
 # Example Output of ranked Top Level Domains (TLD)
 head top-recs/top-TLD-100.csv
 1,com
 2,net
-3,org
-4,googleapis.com
+3,googleapis.com
+4,org
 5,io
-6,co
-7,s3.amazonaws.com
-8,tv
-9,elb.amazonaws.com
-10,goog
+6,cn
+7,goog
+8,co
+9,vn
+10,tv
 
 # Example Output of ranked Top Websites
 head top-recs/top-sites-100.csv
 1,google.com
-2,netflix.com
-3,api-global.netflix.com
-4,www.google.com
-5,microsoft.com
-6,facebook.com
-7,doubleclick.net
-8,g.doubleclick.net
-9,google-analytics.com
-10,googleads.g.doubleclick.net
+2,microsoft.com
+3,www.google.com
+4,windowsupdate.com
+5,ctldl.windowsupdate.com
+6,data.microsoft.com
+7,facebook.com
+8,netflix.com
+9,safebrowsing.googleapis.com
+10,live.com
 ```
