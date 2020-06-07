@@ -10,9 +10,9 @@ The repo's goal is to provide a simple, static comma separate files available fo
 ## File Downloads
 The files can be downloaded in several ways:
 
-1. [Download archive release](https://gitlab.com/cjbarker/top-domains/uploads/top-recs-20200329.zip ) in 7zip format that includes all the files
+1. [Download archive release](https://gitlab.com/cjbarker/top-domains/uploads/top-recs-20200521.zip) in 7zip format that includes all the files
 ```bash
-wget https://gitlab.com/cjbarker/top-domains/uploads/top-recs-20200329.zip
+wget https://gitlab.com/cjbarker/top-domains/uploads/top-recs-20200521.zip
 ```
 
 2. All files downloaded via clone of the repository
